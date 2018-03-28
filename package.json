@@ -1,0 +1,24 @@
+{
+  "name": "tbpwebsite",
+  "version": "1.0.0",
+  "description": "Website for taubeta pi at RPI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gregjhansell97/TBPWebsite.git"
+  },
+  "author": "Daemon the Koala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gregjhansell97/TBPWebsite/issues"
+  },
+  "homepage": "https://github.com/gregjhansell97/TBPWebsite#readme",
+  "devDependencies": {
+    "webpack-cli": "^2.0.13"
+  }
+}
