@@ -1,0 +1,62 @@
+{
+  "President" : {
+    "name": "Mara Giga",
+    "image": "",
+    "email": "",
+    "bio": ""
+  },
+  "Vice President" : {
+    "name": "Alison Goldsmith",
+    "image": "",
+    "email": "",
+    "bio": ""
+  },
+  "Treasurer" : {
+    "name": "Jackie Vulpis",
+    "image": "",
+    "email": "",
+    "bio": ""
+  },
+  "Activities Chair" : {
+    "name": "Ashley Hersey",
+    "image": "",
+    "email": "",
+    "bio": ""
+  },
+  "Community Service Chair" : {
+    "name": "Monisha Das",
+    "image": "",
+    "email": "",
+    "bio": ""
+  },
+  "MindSET Chair" : {
+    "name": "Paul McKee",
+    "image": "",
+    "email": "",
+    "bio": ""
+  },
+  "Corresponding Secretary" : {
+    "name": "Laura Bentivegna",
+    "image": "",
+    "email": "",
+    "bio": ""
+  },
+  "Recording Secretary" : {
+    "name": "Olivia Paradis",
+    "image": "",
+    "email": "",
+    "bio": ""
+  },
+  "Webmaster" : {
+    "name": "Matthew Scheffer",
+    "image": "",
+    "email": "",
+    "bio": ""
+  },
+  "Website Author" : {
+    "name": "Gergory Hansell",
+    "image": "",
+    "email": "",
+    "bio": ""
+  }
+}
