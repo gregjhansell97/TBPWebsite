@@ -8,13 +8,13 @@ import MenuItem from 'material-ui/MenuItem';
 
 //inhouse imports
 import Events from "./Events.jsx";
-import History from "./History.jsx";
+import About from "./About.jsx";
 import Members from "./Members.jsx";
 import Officers from "./Officers.jsx";
 
 //Page Enums:
 const EVENTS = "Events";
-const HISTORY = "History";
+const ABOUT = "About";
 const MEMBERS = "Members";
 const OFFICERS = "Officers";
 
@@ -31,22 +31,24 @@ class Root extends React.Component {
     const {page, drawerOpen} = this.state;
     const pages = {
       "Events" : Events,
-      "History" : History,
       "Members" : Members,
-      "Officers" : Officers
+      "Officers" : Officers,
+      "About" : About
     };
     const P = pages[page];
 
     return (
       <div>
+
         <AppBar
-        title={page}
-        onLeftIconButtonClick={() => this.setState({drawerOpen: !drawerOpen})} />
+          title={page}
+          onLeftIconButtonClick={() => this.setState({drawerOpen: !drawerOpen})} />
 
         <Drawer
-        open={drawerOpen}
-        docked={false}
-        onRequestChange={(open) => this.setState({drawerOpen: open})}>
+          open={drawerOpen}
+          docked={false}
+          onRequestChange={(open) => this.setState({drawerOpen: open})}>
+
           {Object.keys(pages).map((pg, i) =>
             <MenuItem key={i} onClick={ () => {
               this.setState({
@@ -55,8 +57,11 @@ class Root extends React.Component {
               })
             }}> {pg} </MenuItem>
           )}
+
         </Drawer>
-        {<P />}
+
+        {<P data={this.props.data}/>}
+
       </div>
     );
   }
