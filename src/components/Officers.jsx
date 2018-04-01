@@ -10,8 +10,8 @@ class Officer extends React.Component {
     const {name, image, email, bio, position} = officer
     return(
       <Card>
-        <CardHeader title={position} subtitle={name + ": " + email} avatar={image} style={{width: "30%"}}/>
-        <CardText style={{width: "60%"}}> {bio} </CardText>
+        <CardHeader title={position} subtitle={name + ": " + email} avatar={image}/>
+        <CardText> {bio} </CardText>
       </Card>
     );
   }

@@ -1,0 +1,78 @@
+{
+    "candidates": [
+    ],
+    "members": [
+    ],
+    "officers": [
+        {
+            "email": "a sum 41 supporter",
+            "name": "Mara Giga",
+            "image": "/static/images/officers/kangaroo_jack.jpg",
+            "bio": "Yo, sawdust creates face sparks of green lime",
+            "position": "President"
+        },
+        {
+            "email": "a neil young neophyte",
+            "name": "Alison Goldsmith",
+            "image": "/static/images/officers/kangaroo_jack.jpg",
+            "bio": "Telephone! How else can pandas walk on water?",
+            "position": "Vice President"
+        },
+        {
+            "email": "a green day-dreamer",
+            "name": "Jackie Vulpis",
+            "image": "/static/images/officers/kangaroo_jack.jpg",
+            "bio": "The pavement in the streets of detroit are made of of pterodactyl tears",
+            "position": "Treasurer"
+        },
+        {
+            "email": "a led zeppelin lover",
+            "name": "Ashley Hersey",
+            "image": "/static/images/officers/kangaroo_jack.jpg",
+            "bio": "Potato chips support the local kangaroos in shady subway stations",
+            "position": "Activities Chair"
+        },
+        {
+            "email": "a grateful dead head",
+            "name": "Monisha Das",
+            "image": "/static/images/officers/kangaroo_jack.jpg",
+            "bio": "I like turtles!",
+            "position": "Community Service Chair"
+        },
+        {
+            "email": "a strokes sycophant",
+            "name": "Paul McKee",
+            "image": "/static/images/officers/kangaroo_jack.jpg",
+            "bio": "I'm the Bob Ross of MindSET!",
+            "position": "MindSET Chair"
+        },
+        {
+            "email": "a beatles believer",
+            "name": "Laura Bentivegna",
+            "image": "/static/images/officers/kangaroo_jack.jpg",
+            "bio": "I make paper mache loch ness monsters in my spare time",
+            "position": "Corresponding Secretary"
+        },
+        {
+            "email": "a white stripes winner",
+            "name": "Olivia Paradis",
+            "image": "/static/images/officers/kangaroo_jack.jpg",
+            "bio": "I DONT KNOW HOW TO FIX MY CAPSLOCK BUTTON",
+            "position": "Recording Secretary"
+        },
+        {
+            "email": "a blink-182 embracer",
+            "name": "Matthew Scheffer",
+            "image": "/static/images/officers/kangaroo_jack.jpg",
+            "bio": "The moon landing was a hoax and Dick Cheney made $39.5 Billion dollars off the Iraq War",
+            "position": "Webmaster"
+        },
+        {
+          "bio": "I'm 42 years old and want to be an airplane when I grow up",
+          "image": "/static/images/officers/kangaroo_jack.jpg",
+          "name": "Gergory Hansell",
+          "position": "Website Author",
+          "email": "a \"toto\"ly awesome tinkerer"
+        }
+    ]
+  }

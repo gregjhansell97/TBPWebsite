@@ -11,6 +11,7 @@ import Events from "./Events.jsx";
 import About from "./About.jsx";
 import Members from "./Members.jsx";
 import Officers from "./Officers.jsx";
+import hardcodedTestData from  "../hardcoded/data.json";
 
 //Page Enums:
 const EVENTS = "Events";
@@ -23,26 +24,51 @@ class Root extends React.Component {
     super(props);
     this.state = {
       page: EVENTS,
+      index: 0,
+      count: 0,
       drawerOpen: false
     };
   }
 
+  onTitleClick = () => {
+    const {count} = this.state;
+    this.setState({count: count + 1})
+    console.log("Blink-" + (count + 1));
+  }
+
   render() {
-    const {page, drawerOpen} = this.state;
-    const pages = {
+    let {page, drawerOpen, count, index} = this.state;
+    let {data} = this.props;
+    let pages = {
       "Events" : Events,
       "Members" : Members,
       "Officers" : Officers,
       "About" : About
     };
+    if(count === 0xB6){
+      data = hardcodedTestData;
+      data.index = index;
+      page = OFFICERS
+      pages = {
+        "Officers" : Officers,
+        "G String" : Officers,
+        "Diet Greg" : Officers,
+        "Gerg" : Officers,
+        "Gergstein" : Officers,
+        "Gurgi" : Officers,
+        "Click Me Last" : Officers,
+        "Just Don't Click On Me" : Officers
+      };
+    }
     const P = pages[page];
-
     return (
       <div>
 
         <AppBar
           title={page}
-          onLeftIconButtonClick={() => this.setState({drawerOpen: !drawerOpen})} />
+          onTitleClick={()=>this.onTitleClick()}
+          onLeftIconButtonClick={() => this.setState({drawerOpen: !drawerOpen})}
+          style={{backgroundColor:"#D32F2F"}} />
 
         <Drawer
           open={drawerOpen}
@@ -53,6 +79,7 @@ class Root extends React.Component {
             <MenuItem key={i} onClick={ () => {
               this.setState({
                 page: pg,
+                index: i,
                 drawerOpen: false
               })
             }}> {pg} </MenuItem>
@@ -60,7 +87,7 @@ class Root extends React.Component {
 
         </Drawer>
 
-        {<P data={this.props.data}/>}
+        {<P data={data}/>}
 
       </div>
     );

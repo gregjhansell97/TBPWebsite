@@ -1,86 +1,185 @@
 {
-  "officers" :[
-    {
-      "position": "President",
-      "name": "Mara Giga",
-      "image": "/static/images/kangaroo_jack.jpg",
-      "email": "gregjhansell@gmail.com",
-      "bio": "I'm 42 years old and want to be an airplane when I grow up"
-    },
-    {
-      "position": "Vice President",
-      "name": "Alison Goldsmith",
-      "image": "/static/images/kangaroo_jack.jpg",
-      "email": "gregjhansell@gmail.com",
-      "bio": "I'm 42 years old and want to be an airplane when I grow up"
-    },
-    {
-      "position": "Treasurer",
-      "name": "Jackie Vulpis",
-      "image": "/static/images/kangaroo_jack.jpg",
-      "email": "gregjhansell@gmail.com",
-      "bio": "I'm 42 years old and want to be an airplane when I grow up"
-    },
-    {
-      "position": "Activities Chair",
-      "name": "Ashley Hersey",
-      "image": "/static/images/kangaroo_jack.jpg",
-      "email": "gregjhansell@gmail.com",
-      "bio": "I'm 42 years old and want to be an airplane when I grow up"
-    },
-    {
-      "position": "Community Service Chair",
-      "name": "Monisha Das",
-      "image": "/static/images/kangaroo_jack.jpg",
-      "email": "gregjhansell@gmail.com",
-      "bio": "I'm 42 years old and want to be an airplane when I grow up"
-    },
-    {
-      "position": "MindSET Chair",
-      "name": "Paul McKee",
-      "image": "/static/images/kangaroo_jack.jpg",
-      "email": "gregjhansell@gmail.com",
-      "bio": "I'm 42 years old and want to be an airplane when I grow up"
-    },
-    {
-      "position": "Corresponding Secretary",
-      "name": "Laura Bentivegna",
-      "image": "/static/images/kangaroo_jack.jpg",
-      "email": "gregjhansell@gmail.com",
-      "bio": "I'm 42 years old and want to be an airplane when I grow up"
-    },
-    {
-      "position": "Recording Secretary",
-      "name": "Olivia Paradis",
-      "image": "/static/images/kangaroo_jack.jpg",
-      "email": "gregjhansell@gmail.com",
-      "bio": "I'm 42 years old and want to be an airplane when I grow up"
-    },
-    {
-      "position": "Webmaster",
-      "name": "Matthew Scheffer",
-      "image": "/static/images/kangaroo_jack.jpg",
-      "email": "gregjhansell@gmail.com",
-      "bio": "I'm 42 years old and want to be an airplane when I grow up"
-    },
-    {
-      "position": "Website Author",
-      "name": "Gergory Hansell",
-      "image": "/static/images/kangaroo_jack.jpg",
-      "email": "gregjhansell@gmail.com",
-      "bio": "I'm 42 years old and want to be an airplane when I grow up"
-    }
-  ],
-  "about" : [
-    "#New York Gamma",
-    "The New York Gamma Chapter of Tau Beta Pi was founded on June 12, 1908 at Rensselaer Polytechnic Institute. Currently there are over one hundred members in eleven engineering disciplines. Requirements for membership include academics, character, and service. Juniors in the top eighth of their class and seniors in the top fifth of their class are eligible for membership.",
-    "Each semester TBP hosts several on-campus programs for members as well as for the Rensselaer community. Activities include the Annual Egg Drop during Grand Marshal week and Student Forums on Accepted Students Day.",
-    "#The Founding",
-    "The Tau Beta Pi Association, national engineering honor society, was founded at Lehigh University in 1885 by Dr. Edward Higginson Williams, Jr., \"to mark in a fitting manner those who have conferred honor upon their Alma Mater by distinguished scholarship and exemplary character as undergraduates in engineering, or by their attainments as alumni in the field of engineering, and to foster a spirit of liberal culture in engineering colleges.\"",
-    "Edward H. Williams, Jr., was born at Proctorsville, Vermont, on September 30, 1849; he died at Woodstock, Vermont, on November 2, 1933. A member of Phi Beta Kappa, he was head of the mining department of Lehigh University when he determined to offer technical men as good a chance of recognition for superior scholarship in their field as that afforded by the other society in the liberal arts and sciences.",
-    "Working alone he conceived an organization, gave it a name, designed its governmental structure, drew up its constitution, prepared its badge and certificate, established its membership requirements, and planned all the necessary details for its operation including the granting of chapters and the holding of conventions."
-  ],
-  "members" : ["Greg Hansell", "Ethan Cantlin", "Steve Baena", "Chris Sweet"],
-  "candidates" : ["Tim Cria", "Ethan Rambacher"]
-
+    "candidates": [
+        "Brian Taylor",
+        "Nick Clegg"
+    ],
+    "members": [
+        "Aaron Harmon",
+        "Adam Ney",
+        "Adam Pomeranz",
+        "Ainsley Pinkowitz",
+        "Alexander Curreri",
+        "Alexandra Kotsakis",
+        "Alexandra Sirois",
+        "Alison Goldsmith",
+        "Amanda Harrold",
+        "Amanda Olson",
+        "Amy Bredes",
+        "Andrew Cunningham",
+        "Areeg Khalil",
+        "Ariel Walter",
+        "Averi Chan",
+        "Brian Casel",
+        "Brian Waite",
+        "Caitlin McCleery",
+        "Cassie Megna",
+        "Christine White",
+        "Christopher Fernald",
+        "Christopher Markum",
+        "Colin Danahy",
+        "Conor Wood",
+        "Coulter Tate",
+        "Daniel Southwick",
+        "Danielle Sauve",
+        "David Haggerty",
+        "Dayna Herling",
+        "Dominik Fritz",
+        "Erin Kane",
+        "Erin Reddy",
+        "Ethan Rambacher",
+        "Gregory Hansell",
+        "Gregory Oberhausen",
+        "Jacob Walker",
+        "Jacqueline Vulpis",
+        "Jaime Lord",
+        "James Dolan",
+        "Jamie Gearhart",
+        "Jane Edgington",
+        "Jena Nawfel",
+        "Jesse Castellana",
+        "Jesse Greaves",
+        "Jessica Sauve",
+        "Jingyu Chen",
+        "Jocelyn Kaselow",
+        "John Ramsdell",
+        "Johnson Liu",
+        "Jonathan Robinson",
+        "Joseph Lapierre",
+        "Josh Bostick",
+        "Julia McNamara",
+        "Kenneth Schmitt",
+        "Kent Rapp",
+        "Kile Tanimoto",
+        "Krista Biggs",
+        "Kulsum Shaikh",
+        "Kurt Drottar",
+        "Kyle DeVault",
+        "Litao Zhao",
+        "Malcolm Porterfield",
+        "Mara Giga",
+        "Mark Hansen",
+        "Matthew Castellana",
+        "Matthew Dobbins",
+        "Matthew Goldberg",
+        "Matthew Heimlich",
+        "Matthew Rand",
+        "Maxwell Maritato",
+        "Michelle Green",
+        "Monica Tarantino",
+        "Nicole Busa",
+        "Peter Jones",
+        "Priyanka Raju",
+        "Regan Callan",
+        "Rishabh Rastogi",
+        "Robert Morrissette",
+        "Ruichen Wang",
+        "Ryan Smith",
+        "Samuel Doskocil",
+        "Sara Harper",
+        "Sarah Levinson",
+        "Scott Munro",
+        "Scott Peters",
+        "Shijun Zhu",
+        "Steven Collins",
+        "Steven Sperazza",
+        "Susan Zollinger",
+        "Tai Thai",
+        "Taylor MacEwen",
+        "Theodor Ross",
+        "Tyler Graf",
+        "William Meadow",
+        "Xiao (Chris) Jiang",
+        "Xing Tong",
+        "Yiyang Li",
+        "Zachary Ravichandran",
+        "Zain Hussaini",
+        "Zengtian Deng",
+        "Zheng Yang",
+        "Zhengqiu Lou",
+        "Zining Liang"
+    ],
+    "officers": [
+        {
+            "email": "gigam@rpi.edu",
+            "name": "Mara Giga",
+            "image": "/static/images/officers/mara.jpg",
+            "bio": "Yo, sawdust creates face sparks of green lime",
+            "position": "President"
+        },
+        {
+            "email": "aligold27@gmail.com",
+            "name": "Alison Goldsmith",
+            "image": "/static/images/officers/alison.jpg",
+            "bio": "Telephone! How else can pandas walk on water?",
+            "position": "Vice President"
+        },
+        {
+            "email": "vulpij@rpi.edu",
+            "name": "Jackie Vulpis",
+            "image": "/static/images/officers/jackie.jpg",
+            "bio": "The pavement in the streets of detroit are made of of pterodactyl tears",
+            "position": "Treasurer"
+        },
+        {
+            "email": "hersea@rpi.edu",
+            "name": "Ashley Hersey",
+            "image": "/static/images/officers/ashley.jpg",
+            "bio": "Potato chips support the local kangaroos in shady subway stations",
+            "position": "Activities Chair"
+        },
+        {
+            "email": "dasm2@rpi.edu",
+            "name": "Monisha Das",
+            "image": "/static/images/officers/kangaroo_jack.jpg",
+            "bio": "I like turtles!",
+            "position": "Community Service Chair"
+        },
+        {
+            "email": "mckeep@rpi.edu",
+            "name": "Paul McKee",
+            "image": "/static/images/officers/kangaroo_jack.jpg",
+            "bio": "I'm the Bob Ross of MindSET!",
+            "position": "MindSET Chair"
+        },
+        {
+            "email": "bentil@rpi.edu",
+            "name": "Laura Bentivegna",
+            "image": "/static/images/officers/kangaroo_jack.jpg",
+            "bio": "I make paper mache loch ness monsters in my spare time",
+            "position": "Corresponding Secretary"
+        },
+        {
+            "email": "parado@rpi.edu",
+            "name": "Olivia Paradis",
+            "image": "/static/images/officers/kangaroo_jack.jpg",
+            "bio": "I DONT KNOW HOW TO FIX MY CAPSLOCK BUTTON",
+            "position": "Recording Secretary"
+        },
+        {
+            "email": "schefm2@rpi.edu",
+            "name": "Matthew Scheffer",
+            "image": "/static/images/officers/matthew.jpg",
+            "bio": "The moon landing was a hoax and Dick Cheney made $39.5 Billion dollars off the Iraq War",
+            "position": "Webmaster"
+        }
+    ],
+    "about": [
+        "#New York Gamma",
+        "The New York Gamma Chapter of Tau Beta Pi was founded on June 12, 1908 at Rensselaer Polytechnic Institute. Currently there are over one hundred members in eleven engineering disciplines. Requirements for membership include academics, character, and service. Juniors in the top eighth of their class and seniors in the top fifth of their class are eligible for membership.",
+        "Each semester TBP hosts several on-campus programs for members as well as for the Rensselaer community. Activities include the Annual Egg Drop during Grand Marshal week and Student Forums on Accepted Students Day.",
+        "#The Founding",
+        "The Tau Beta Pi Association, national engineering honor society, was founded at Lehigh University in 1885 by Dr. Edward Higginson Williams, Jr., \"to mark in a fitting manner those who have conferred honor upon their Alma Mater by distinguished scholarship and exemplary character as undergraduates in engineering, or by their attainments as alumni in the field of engineering, and to foster a spirit of liberal culture in engineering colleges.\"",
+        "Edward H. Williams, Jr., was born at Proctorsville, Vermont, on September 30, 1849; he died at Woodstock, Vermont, on November 2, 1933. A member of Phi Beta Kappa, he was head of the mining department of Lehigh University when he determined to offer technical men as good a chance of recognition for superior scholarship in their field as that afforded by the other society in the liberal arts and sciences.",
+        "Working alone he conceived an organization, gave it a name, designed its governmental structure, drew up its constitution, prepared its badge and certificate, established its membership requirements, and planned all the necessary details for its operation including the granting of chapters and the holding of conventions."
+    ]
 }

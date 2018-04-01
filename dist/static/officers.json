@@ -1,62 +1,65 @@
-{
-  "President" : {
+[
+  {
+    "position": "President",
     "name": "Mara Giga",
-    "image": "",
-    "email": "",
-    "bio": ""
+    "image": "/static/images/officers/mara.jpg",
+    "email": "gigam@rpi.edu",
+    "bio": "Yo, sawdust creates face sparks of green lime"
   },
-  "Vice President" : {
+  {
+    "position": "Vice President",
     "name": "Alison Goldsmith",
-    "image": "",
-    "email": "",
-    "bio": ""
+    "image": "/static/images/officers/alison.jpg",
+    "email": "aligold27@gmail.com",
+    "bio": "Telephone! How else can pandas walk on water?"
   },
-  "Treasurer" : {
+  {
+    "position": "Treasurer",
     "name": "Jackie Vulpis",
-    "image": "",
-    "email": "",
-    "bio": ""
+    "image": "/static/images/officers/jackie.jpg",
+    "email": "vulpij@rpi.edu",
+    "bio": "The pavement in the streets of detroit are made of of pterodactyl tears"
   },
-  "Activities Chair" : {
+  {
+    "position": "Activities Chair",
     "name": "Ashley Hersey",
-    "image": "",
-    "email": "",
-    "bio": ""
+    "image": "/static/images/officers/ashley.jpg",
+    "email": "hersea@rpi.edu",
+    "bio": "Potato chips support the local kangaroos in shady subway stations"
   },
-  "Community Service Chair" : {
+  {
+    "position": "Community Service Chair",
     "name": "Monisha Das",
-    "image": "",
-    "email": "",
-    "bio": ""
+    "image": "/static/images/officers/kangaroo_jack.jpg",
+    "email": "dasm2@rpi.edu",
+    "bio": "I like turtles!"
   },
-  "MindSET Chair" : {
+  {
+    "position": "MindSET Chair",
     "name": "Paul McKee",
-    "image": "",
-    "email": "",
-    "bio": ""
+    "image": "/static/images/officers/kangaroo_jack.jpg",
+    "email": "mckeep@rpi.edu",
+    "bio": "I'm the Bob Ross of MindSET!"
   },
-  "Corresponding Secretary" : {
+  {
+    "position": "Corresponding Secretary",
     "name": "Laura Bentivegna",
-    "image": "",
-    "email": "",
-    "bio": ""
+    "image": "/static/images/officers/kangaroo_jack.jpg",
+    "email": "bentil@rpi.edu",
+    "bio": "I make paper mache loch ness monsters in my spare time"
   },
-  "Recording Secretary" : {
+  {
+    "position": "Recording Secretary",
     "name": "Olivia Paradis",
-    "image": "",
-    "email": "",
-    "bio": ""
+    "image": "/static/images/officers/kangaroo_jack.jpg",
+    "email": "parado@rpi.edu",
+    "bio": "I DONT KNOW HOW TO FIX MY CAPSLOCK BUTTON"
   },
-  "Webmaster" : {
+  {
+    "position": "Webmaster",
     "name": "Matthew Scheffer",
-    "image": "",
-    "email": "",
-    "bio": ""
-  },
-  "Website Author" : {
-    "name": "Gergory Hansell",
-    "image": "",
-    "email": "",
-    "bio": ""
+    "image": "/static/images/officers/matthew.jpg",
+    "email": "schefm2@rpi.edu",
+    "bio": "The moon landing was a hoax and Dick Cheney made $39.5 Billion dollars off the Iraq War"
   }
-}
+]

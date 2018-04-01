@@ -51,7 +51,7 @@ class Members extends React.Component {
     return (
       <div>
         <img src="static/images/members.jpg" alt="" style={{width: "100%"}}/>
-        <Tabs>
+        <Tabs tabItemContainerStyle={{backgroundColor:"#D32F2F"}} inkBarStyle={{backgroundColor:"#FFCDD2"}}>
           <Tab label="Current Members">
             <CurrentMembers members={members}/>
           </Tab>
