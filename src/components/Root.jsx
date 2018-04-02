@@ -45,20 +45,19 @@ class Root extends React.Component {
       "Officers" : Officers,
       "About" : About
     };
-    if(count === 0xB6){
+    if(count === 10){ //0xB6
       data = hardcodedTestData;
-      data.index = index;
-      page = OFFICERS
+      const testMenu = data.candidates;
+      data.url = data.members[index - 1]
+      if(page === EVENTS || page === ABOUT || page === MEMBERS){
+        page = OFFICERS
+      }
       pages = {
         "Officers" : Officers,
-        "G String" : Officers,
-        "Diet Greg" : Officers,
-        "Gerg" : Officers,
-        "Gergstein" : Officers,
-        "Gurgi" : Officers,
-        "Click Me Last" : Officers,
-        "Just Don't Click On Me" : Officers
       };
+      for(let i = 0; i < testMenu.length; i++){
+        pages[testMenu[i]] = Events;
+      }
     }
     const P = pages[page];
     return (

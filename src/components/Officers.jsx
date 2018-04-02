@@ -17,8 +17,6 @@ class Officer extends React.Component {
   }
 }
 
-
-
 class Officers extends React.Component {
   render() {
     const {officers} = this.props.data;

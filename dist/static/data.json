@@ -1,8 +1,4 @@
 {
-    "candidates": [
-        "Brian Taylor",
-        "Nick Clegg"
-    ],
     "members": [
         "Aaron Harmon",
         "Adam Ney",
@@ -108,69 +104,73 @@
         "Zhengqiu Lou",
         "Zining Liang"
     ],
+    "candidates": [
+        "Brian Taylor",
+        "Nick Clegg"
+    ],
     "officers": [
         {
+            "position": "President",
             "email": "gigam@rpi.edu",
-            "name": "Mara Giga",
             "image": "/static/images/officers/mara.jpg",
-            "bio": "Yo, sawdust creates face sparks of green lime",
-            "position": "President"
+            "bio": "<insert bio here>",
+            "name": "Mara Giga"
         },
         {
+            "position": "Vice President",
             "email": "aligold27@gmail.com",
-            "name": "Alison Goldsmith",
             "image": "/static/images/officers/alison.jpg",
-            "bio": "Telephone! How else can pandas walk on water?",
-            "position": "Vice President"
+            "bio": "<insert bio here>",
+            "name": "Alison Goldsmith"
         },
         {
+            "position": "Treasurer",
             "email": "vulpij@rpi.edu",
-            "name": "Jackie Vulpis",
             "image": "/static/images/officers/jackie.jpg",
-            "bio": "The pavement in the streets of detroit are made of of pterodactyl tears",
-            "position": "Treasurer"
+            "bio": "<insert bio here>",
+            "name": "Jackie Vulpis"
         },
         {
+            "position": "Activities Chair",
             "email": "hersea@rpi.edu",
-            "name": "Ashley Hersey",
             "image": "/static/images/officers/ashley.jpg",
-            "bio": "Potato chips support the local kangaroos in shady subway stations",
-            "position": "Activities Chair"
+            "bio": "<insert bio here>",
+            "name": "Ashley Hersey"
         },
         {
+            "position": "Community Service Chair",
             "email": "dasm2@rpi.edu",
-            "name": "Monisha Das",
-            "image": "/static/images/officers/kangaroo_jack.jpg",
-            "bio": "I like turtles!",
-            "position": "Community Service Chair"
+            "image": "/static/images/officers/monisha.jpg",
+            "bio": "<insert bio here>",
+            "name": "Monisha Das"
         },
         {
+            "position": "MindSET Chair",
             "email": "mckeep@rpi.edu",
-            "name": "Paul McKee",
-            "image": "/static/images/officers/kangaroo_jack.jpg",
-            "bio": "I'm the Bob Ross of MindSET!",
-            "position": "MindSET Chair"
+            "image": "/static/images/officers/paul.jpg",
+            "bio": "<insert bio here>",
+            "name": "Paul McKee"
         },
         {
+            "position": "Corresponding Secretary",
             "email": "bentil@rpi.edu",
-            "name": "Laura Bentivegna",
-            "image": "/static/images/officers/kangaroo_jack.jpg",
-            "bio": "I make paper mache loch ness monsters in my spare time",
-            "position": "Corresponding Secretary"
+            "image": "/static/images/officers/laura.jpg",
+            "bio": "<insert bio here>",
+            "name": "Laura Bentivegna"
         },
         {
+            "position": "Recording Secretary",
             "email": "parado@rpi.edu",
-            "name": "Olivia Paradis",
-            "image": "/static/images/officers/kangaroo_jack.jpg",
-            "bio": "I DONT KNOW HOW TO FIX MY CAPSLOCK BUTTON",
-            "position": "Recording Secretary"
+            "image": "/static/images/officers/olivia.jpg",
+            "bio": "<insert bio here>",
+            "name": "Olivia Paradis"
         },
         {
+            "position": "Webmaster",
             "email": "schefm2@rpi.edu",
-            "name": "Matthew Scheffer",
             "image": "/static/images/officers/matthew.jpg",
-            "bio": "The moon landing was a hoax and Dick Cheney made $39.5 Billion dollars off the Iraq War",
-            "position": "Webmaster"
+            "bio": "<insert bio here>",
+            "name": "Matthew Scheffer"
         }
     ],
     "about": [
@@ -181,5 +181,6 @@
         "The Tau Beta Pi Association, national engineering honor society, was founded at Lehigh University in 1885 by Dr. Edward Higginson Williams, Jr., \"to mark in a fitting manner those who have conferred honor upon their Alma Mater by distinguished scholarship and exemplary character as undergraduates in engineering, or by their attainments as alumni in the field of engineering, and to foster a spirit of liberal culture in engineering colleges.\"",
         "Edward H. Williams, Jr., was born at Proctorsville, Vermont, on September 30, 1849; he died at Woodstock, Vermont, on November 2, 1933. A member of Phi Beta Kappa, he was head of the mining department of Lehigh University when he determined to offer technical men as good a chance of recognition for superior scholarship in their field as that afforded by the other society in the liberal arts and sciences.",
         "Working alone he conceived an organization, gave it a name, designed its governmental structure, drew up its constitution, prepared its badge and certificate, established its membership requirements, and planned all the necessary details for its operation including the granting of chapters and the holding of conventions."
-    ]
+    ],
+    "url": "https://www.google.com/calendar/embed?src=tbpnygamma%40gmail.com&amp;ctz=America/New_York"
 }
