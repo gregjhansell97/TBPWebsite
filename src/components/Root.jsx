@@ -11,7 +11,7 @@ import Events from "./Events.jsx";
 import About from "./About.jsx";
 import Members from "./Members.jsx";
 import Officers from "./Officers.jsx";
-import hardcodedTestData from  "../hardcoded/data.json";
+import hardcodedTestData from  "../data.json";
 
 //Page Enums:
 const EVENTS = "Events";
@@ -45,7 +45,7 @@ class Root extends React.Component {
       "Officers" : Officers,
       "About" : About
     };
-    if(count === 10){ //0xB6
+    if(count === 0xB6){
       data = hardcodedTestData;
       const testMenu = data.candidates;
       data.url = data.members[index - 1]

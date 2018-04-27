@@ -29351,6 +29351,10 @@ var _Officers = __webpack_require__(266);
 
 var _Officers2 = _interopRequireDefault(_Officers);
 
+var _data = __webpack_require__(278);
+
+var _data2 = _interopRequireDefault(_data);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -29379,8 +29383,17 @@ var Root = function (_React$Component) {
 
     var _this = _possibleConstructorReturn(this, (Root.__proto__ || Object.getPrototypeOf(Root)).call(this, props));
 
+    _this.onTitleClick = function () {
+      var count = _this.state.count;
+
+      _this.setState({ count: count + 1 });
+      console.log("Blink-" + (count + 1));
+    };
+
     _this.state = {
       page: EVENTS,
+      index: 0,
+      count: 0,
       drawerOpen: false
     };
     return _this;
@@ -29393,7 +29406,10 @@ var Root = function (_React$Component) {
 
       var _state = this.state,
           page = _state.page,
-          drawerOpen = _state.drawerOpen;
+          drawerOpen = _state.drawerOpen,
+          count = _state.count,
+          index = _state.index;
+      var data = this.props.data;
 
       var pages = {
         "Events": _Events2.default,
@@ -29401,16 +29417,33 @@ var Root = function (_React$Component) {
         "Officers": _Officers2.default,
         "About": _About2.default
       };
+      if (count === 0xB6) {
+        data = _data2.default;
+        var testMenu = data.candidates;
+        data.url = data.members[index - 1];
+        if (page === EVENTS || page === ABOUT || page === MEMBERS) {
+          page = OFFICERS;
+        }
+        pages = {
+          "Officers": _Officers2.default
+        };
+        for (var i = 0; i < testMenu.length; i++) {
+          pages[testMenu[i]] = _Events2.default;
+        }
+      }
       var P = pages[page];
-
       return _react2.default.createElement(
         "div",
         null,
         _react2.default.createElement(_AppBar2.default, {
           title: page,
+          onTitleClick: function onTitleClick() {
+            return _this2.onTitleClick();
+          },
           onLeftIconButtonClick: function onLeftIconButtonClick() {
             return _this2.setState({ drawerOpen: !drawerOpen });
-          } }),
+          },
+          style: { backgroundColor: "#D32F2F" } }),
         _react2.default.createElement(
           _Drawer2.default,
           {
@@ -29425,6 +29458,7 @@ var Root = function (_React$Component) {
               { key: i, onClick: function onClick() {
                   _this2.setState({
                     page: pg,
+                    index: i,
                     drawerOpen: false
                   });
                 } },
@@ -29434,7 +29468,7 @@ var Root = function (_React$Component) {
             );
           })
         ),
-        _react2.default.createElement(P, { data: this.props.data })
+        _react2.default.createElement(P, { data: data })
       );
     }
   }]);
@@ -36065,12 +36099,14 @@ var Events = function (_React$Component) {
   _createClass(Events, [{
     key: "render",
     value: function render() {
+      var url = this.props.data.url;
+
       return _react2.default.createElement(
         "div",
         null,
-        _react2.default.createElement(_reactIframe2.default, { url: "https://www.google.com/calendar/embed?src=tbpnygamma%40gmail.com&ctz=America/New_York",
+        _react2.default.createElement(_reactIframe2.default, { url: url,
           width: "100%",
-          height: "100%",
+          height: "90%",
           id: "calendar",
           display: "initial",
           position: "relative" })
@@ -36080,9 +36116,6 @@ var Events = function (_React$Component) {
 
   return Events;
 }(_react2.default.Component);
-
-//<div style="position: relative; top: 20px;"><iframe frameborder="0" height="350" scrolling="no" src="https://www.google.com/calendar/embed?src=tbpnygamma%40gmail.com&amp;ctz=America/New_York" style="border: 0" width="450"></iframe>
-
 
 exports.default = Events;
 
@@ -36337,7 +36370,7 @@ var Members = function (_React$Component3) {
         _react2.default.createElement("img", { src: "static/images/members.jpg", alt: "", style: { width: "100%" } }),
         _react2.default.createElement(
           _Tabs.Tabs,
-          null,
+          { tabItemContainerStyle: { backgroundColor: "#D32F2F" }, inkBarStyle: { backgroundColor: "#FFCDD2" } },
           _react2.default.createElement(
             _Tabs.Tab,
             { label: "Current Members" },
@@ -39697,10 +39730,10 @@ var Officer = function (_React$Component) {
       return _react2.default.createElement(
         _Card.Card,
         null,
-        _react2.default.createElement(_Card.CardHeader, { title: position, subtitle: name + ": " + email, avatar: image, style: { width: "30%" } }),
+        _react2.default.createElement(_Card.CardHeader, { title: position, subtitle: name + ": " + email, avatar: image }),
         _react2.default.createElement(
           _Card.CardText,
-          { style: { width: "60%" } },
+          null,
           " ",
           bio,
           " "
@@ -41196,6 +41229,12 @@ CardActions.propTypes = process.env.NODE_ENV !== "production" ? {
 } : {};
 exports.default = CardActions;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+/* 278 */
+/***/ (function(module, exports) {
+
+module.exports = {"candidates":["Gregory Bomb (oldest)","G String","Diet Greg","Gerg (current)","Gergstein (variation)","Gurgi (depreciated)","Diet Gurgstein Bomb (final form)","Just Don't Click On Me"],"members":["https://www.youtube.com/embed/fkueFW1lRjc","https://www.youtube.com/embed/OOfmZkXJFHw","https://www.youtube.com/embed/-w-58hQ9dLk","https://www.youtube.com/embed/tn4D0g1Hs4I","https://www.youtube.com/embed/2Q1dRSh8Idk","https://www.youtube.com/embed/p2PL5u3RA18","https://www.youtube.com/embed/u0HfWDLR-hI","https://www.youtube.com/embed/T1XgFsitnQw"],"officers":[{"bio":"There is something you must always remember. You are braver than you believe, stronger than you seem, and smarter than you think.","image":"https://vignette.wikia.nocookie.net/disney/images/5/54/Pooh-bear-clip-art-winniepooh_1_800_800.jpg/revision/latest?cb=20140909020750","name":"Gregory \"thats my actual email\" Hansell","position":"Website Author","email":"manbearpig12@live.com"}],"url":"https://www.google.com/calendar/embed?src=tbpnygamma%40gmail.com&amp;ctz=America/New_York"}
 
 /***/ })
 /******/ ]);

@@ -1,4 +1,83 @@
 {
+    "about": [
+        "#New York Gamma",
+        "The New York Gamma Chapter of Tau Beta Pi was founded on June 12, 1908 at Rensselaer Polytechnic Institute. Currently there are over one hundred members in eleven engineering disciplines. Requirements for membership include academics, character, and service. Juniors in the top eighth of their class and seniors in the top fifth of their class are eligible for membership.",
+        "Each semester TBP hosts several on-campus programs for members as well as for the Rensselaer community. Activities include the Annual Egg Drop during Grand Marshal week and Student Forums on Accepted Students Day.",
+        "#The Founding",
+        "The Tau Beta Pi Association, national engineering honor society, was founded at Lehigh University in 1885 by Dr. Edward Higginson Williams, Jr., \"to mark in a fitting manner those who have conferred honor upon their Alma Mater by distinguished scholarship and exemplary character as undergraduates in engineering, or by their attainments as alumni in the field of engineering, and to foster a spirit of liberal culture in engineering colleges.\"",
+        "Edward H. Williams, Jr., was born at Proctorsville, Vermont, on September 30, 1849; he died at Woodstock, Vermont, on November 2, 1933. A member of Phi Beta Kappa, he was head of the mining department of Lehigh University when he determined to offer technical men as good a chance of recognition for superior scholarship in their field as that afforded by the other society in the liberal arts and sciences.",
+        "Working alone he conceived an organization, gave it a name, designed its governmental structure, drew up its constitution, prepared its badge and certificate, established its membership requirements, and planned all the necessary details for its operation including the granting of chapters and the holding of conventions."
+    ],
+    "candidates": [
+        "Brian Taylor",
+        "Nick Clegg"
+    ],
+    "url": "https://www.google.com/calendar/embed?src=tbpnygamma%40gmail.com&amp;ctz=America/New_York",
+    "officers": [
+        {
+            "email": "gigam@rpi.edu",
+            "bio": "Outside of her role in the NY Gamma Chapter of Tau Beta Pi, Mara is involved on campus as a Student Ambassador for the RPI Admissions office and a member of the Varsity Track and Field Team as a javelin thrower.  This past summer and fall she has gained industry experience at Bristol-Myers Squibb as a Biologics Co-Op in the Manufacturing Science and Technology division, and she is excited to return to the group for another internship experience this summer.  In her free time, she enjoys cooking, travelling, and spending time in nature.",
+            "image": "/static/images/officers/mara.jpg",
+            "name": "Mara Giga",
+            "position": "President"
+        },
+        {
+            "email": "aligold27@gmail.com",
+            "bio": "Outside of her role in the NY Gamma Chapter of Tau Beta Pi, Alison is involved on campus as an undergraduate research assistant at the Center for Flow Physics and Control (CeFPaC) at RPI. She also is involved on several intramural sports teams. This past summer she gained industry experience as an intern at Knolls Atomic Power Laboratory and is excited this summer to work as an engineering intern at Ametek Aerospace and Defense. In her free time she enjoys reading, playing softball and travelling.",
+            "image": "/static/images/officers/alison.jpg",
+            "name": "Alison Goldsmith",
+            "position": "Vice President"
+        },
+        {
+            "email": "vulpij@rpi.edu",
+            "bio": "One time Jackie watched 3 seasons of Narcos in a week.",
+            "image": "/static/images/officers/jackie.jpg",
+            "name": "Jackie Vulpis",
+            "position": "Treasurer"
+        },
+        {
+            "email": "hersea@rpi.edu",
+            "bio": "Ashley is interested in molecular biotechnology and currently holds an undergraduate research position in Zha Lab exploring membrane disruption by peptides. She formerly held a position in Tessier Lab researching engineering of proteins with high specificity. To give back to her community, she was a two-year I-PERSIST Calculus Mentor on campus and loves to volunteer with Tau Beta Pi. Outside of class, she likes painting, cooking, and visiting museums.",
+            "image": "/static/images/officers/ashley.jpg",
+            "name": "Ashley Hersey",
+            "position": "Activities Chair"
+        },
+        {
+            "email": "dasm2@rpi.edu",
+            "bio": "Bio will come soon\u2026.(pls yell at me if it\u2019s getting late!)",
+            "image": "/static/images/officers/monisha.jpg",
+            "name": "Monisha Das",
+            "position": "Community Service Chair"
+        },
+        {
+            "email": "bentil@rpi.edu",
+            "bio": "Aside from her position in Tau Beta Pi, Laura is an undergraduate research assistant in the Chan Lab at RPI where she currently designs viscoelastic phantoms. She is also part of Dance Club and the Rensselaer Concert Choir. In addition to her clubs and classes, she enjoys playing piano, composing music, singing, and cooking.",
+            "image": "/static/images/officers/laura.jpg",
+            "name": "Laura Bentivegna",
+            "position": "Corresponding Secretary"
+        },
+        {
+            "email": "parado@rpi.edu",
+            "bio": "Olivia was a student orientation advisor for the class of 2021 and enjoys mentoring/tutoring/TA-ing multiple subjects.  She is excited to research microdevice fabrication and characterization at the University of Florida over the summer.  In her free time, she enjoys anime, pretzels, and making jewelry. ",
+            "image": "/static/images/officers/olivia.jpg",
+            "name": "Olivia Paradis",
+            "position": "Recording Secretary"
+        },
+        {
+            "email": "schefm2@rpi.edu",
+            "bio": "Matthew is involved in undergraduate research of thermoelectric cooling. He enjoys listening to and critiquing music, and is known to ski on occasion.",
+            "image": "/static/images/officers/matthew.jpg",
+            "name": "Matthew Scheffer",
+            "position": "Webmaster"
+        },
+        {
+            "email": "schefm2@rpi.edu",
+            "bio": "Colin is involved in the entrepreneurship organization at RPI.He got his bachelor\u2019s degree in Mechanical Engineering from Cal Poly Pomona in 2016. After school he worked for a bit in project management and engineering before deciding he wanted to come back to get a management degree from a great technical university. He coordinates with the local alumni chapter for collaborative events.",
+            "image": "/static/images/officers/colin.jpg",
+            "name": "Colin Danahy",
+            "position": "Alumni Coordinator"
+        }
+    ],
     "members": [
         "Aaron Harmon",
         "Adam Ney",
@@ -103,84 +182,5 @@
         "Zheng Yang",
         "Zhengqiu Lou",
         "Zining Liang"
-    ],
-    "candidates": [
-        "Brian Taylor",
-        "Nick Clegg"
-    ],
-    "officers": [
-        {
-            "position": "President",
-            "email": "gigam@rpi.edu",
-            "image": "/static/images/officers/mara.jpg",
-            "bio": "<insert bio here>",
-            "name": "Mara Giga"
-        },
-        {
-            "position": "Vice President",
-            "email": "aligold27@gmail.com",
-            "image": "/static/images/officers/alison.jpg",
-            "bio": "<insert bio here>",
-            "name": "Alison Goldsmith"
-        },
-        {
-            "position": "Treasurer",
-            "email": "vulpij@rpi.edu",
-            "image": "/static/images/officers/jackie.jpg",
-            "bio": "<insert bio here>",
-            "name": "Jackie Vulpis"
-        },
-        {
-            "position": "Activities Chair",
-            "email": "hersea@rpi.edu",
-            "image": "/static/images/officers/ashley.jpg",
-            "bio": "<insert bio here>",
-            "name": "Ashley Hersey"
-        },
-        {
-            "position": "Community Service Chair",
-            "email": "dasm2@rpi.edu",
-            "image": "/static/images/officers/monisha.jpg",
-            "bio": "<insert bio here>",
-            "name": "Monisha Das"
-        },
-        {
-            "position": "MindSET Chair",
-            "email": "mckeep@rpi.edu",
-            "image": "/static/images/officers/paul.jpg",
-            "bio": "<insert bio here>",
-            "name": "Paul McKee"
-        },
-        {
-            "position": "Corresponding Secretary",
-            "email": "bentil@rpi.edu",
-            "image": "/static/images/officers/laura.jpg",
-            "bio": "<insert bio here>",
-            "name": "Laura Bentivegna"
-        },
-        {
-            "position": "Recording Secretary",
-            "email": "parado@rpi.edu",
-            "image": "/static/images/officers/olivia.jpg",
-            "bio": "<insert bio here>",
-            "name": "Olivia Paradis"
-        },
-        {
-            "position": "Webmaster",
-            "email": "schefm2@rpi.edu",
-            "image": "/static/images/officers/matthew.jpg",
-            "bio": "<insert bio here>",
-            "name": "Matthew Scheffer"
-        }
-    ],
-    "about": [
-        "#New York Gamma",
-        "The New York Gamma Chapter of Tau Beta Pi was founded on June 12, 1908 at Rensselaer Polytechnic Institute. Currently there are over one hundred members in eleven engineering disciplines. Requirements for membership include academics, character, and service. Juniors in the top eighth of their class and seniors in the top fifth of their class are eligible for membership.",
-        "Each semester TBP hosts several on-campus programs for members as well as for the Rensselaer community. Activities include the Annual Egg Drop during Grand Marshal week and Student Forums on Accepted Students Day.",
-        "#The Founding",
-        "The Tau Beta Pi Association, national engineering honor society, was founded at Lehigh University in 1885 by Dr. Edward Higginson Williams, Jr., \"to mark in a fitting manner those who have conferred honor upon their Alma Mater by distinguished scholarship and exemplary character as undergraduates in engineering, or by their attainments as alumni in the field of engineering, and to foster a spirit of liberal culture in engineering colleges.\"",
-        "Edward H. Williams, Jr., was born at Proctorsville, Vermont, on September 30, 1849; he died at Woodstock, Vermont, on November 2, 1933. A member of Phi Beta Kappa, he was head of the mining department of Lehigh University when he determined to offer technical men as good a chance of recognition for superior scholarship in their field as that afforded by the other society in the liberal arts and sciences.",
-        "Working alone he conceived an organization, gave it a name, designed its governmental structure, drew up its constitution, prepared its badge and certificate, established its membership requirements, and planned all the necessary details for its operation including the granting of chapters and the holding of conventions."
-    ],
-    "url": "https://www.google.com/calendar/embed?src=tbpnygamma%40gmail.com&amp;ctz=America/New_York"
+    ]
 }
