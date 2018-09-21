@@ -2,92 +2,56 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 //material-ui
-import AppBar from 'material-ui/AppBar';
-import Drawer from 'material-ui/Drawer';
-import MenuItem from 'material-ui/MenuItem';
+import AppBar from "@material-ui/core/AppBar";
+import Tab from "@material-ui/core/Tab";
+import Tabs from "@material-ui/core/Tabs";
+
 
 //inhouse imports
 import Events from "./Events.jsx";
 import About from "./About.jsx";
-import Members from "./Members.jsx";
-import Officers from "./Officers.jsx";
+//import Members from "./Members.jsx";
+//import Officers from "./Officers.jsx";
 import hardcodedTestData from  "../data.json";
 
-//Page Enums:
-const EVENTS = "Events";
-const ABOUT = "About";
-const MEMBERS = "Members";
-const OFFICERS = "Officers";
-
 class Root extends React.Component {
+
   constructor(props) {
-    super(props);
+    super(props); //thanks bro!
     this.state = {
-      page: EVENTS,
       index: 0,
-      count: 0,
-      drawerOpen: false
-    };
+      count: 0
+    }
   }
 
-  onTitleClick = () => {
+  onClick = () => {
     const {count} = this.state;
-    this.setState({count: count + 1})
-    console.log("Blink-" + (count + 1));
+    this.setState({count: count + 1});
   }
 
   render() {
-    let {page, drawerOpen, count, index} = this.state;
+    let {count, index} = this.state;
     let {data} = this.props;
-    let pages = {
-      "Events" : Events,
-      "Members" : Members,
-      "Officers" : Officers,
-      "About" : About
-    };
-    if(count === 0xB6){
-      data = hardcodedTestData;
-      const testMenu = data.candidates;
-      data.url = data.members[index - 1]
-      if(page === EVENTS || page === ABOUT || page === MEMBERS){
-        page = OFFICERS
-      }
-      pages = {
-        "Officers" : Officers,
-      };
-      for(let i = 0; i < testMenu.length; i++){
-        pages[testMenu[i]] = Events;
-      }
-    }
-    const P = pages[page];
+    let pages = [
+      {name: "Events", component: Events},
+      {name: "Members", component: About},
+      {name: "Officers", component: About},
+      {name: "About", component: About}
+    ];
+    
+    const P = pages[index].component;
+
     return (
       <div>
-
-        <AppBar
-          title={page}
-          onTitleClick={()=>this.onTitleClick()}
-          onLeftIconButtonClick={() => this.setState({drawerOpen: !drawerOpen})}
-          style={{backgroundColor:"#D32F2F"}} />
-
-        <Drawer
-          open={drawerOpen}
-          docked={false}
-          onRequestChange={(open) => this.setState({drawerOpen: open})}>
-
-          {Object.keys(pages).map((pg, i) =>
-            <MenuItem key={i} onClick={ () => {
-              this.setState({
-                page: pg,
-                index: i,
-                drawerOpen: false
-              })
-            }}> {pg} </MenuItem>
-          )}
-
-        </Drawer>
-
+        <AppBar position="static">
+          <Tabs value={index} onChange={(e, i) => this.setState({index: i})}>
+            {pages.map((pg, i) =>
+              <Tab key={i} label={pg.name}/>
+            )}
+          </Tabs>
+        </AppBar>
+       
         {<P data={data}/>}
-
       </div>
     );
   }
