@@ -10,10 +10,10 @@ import Root from "./components/Root.jsx";
 
 const theme = createMuiTheme({
   palette: {
-      primary: red,
-      secondary: {
-          main: "#f44336"
-      },
+    primary: red,
+    secondary: {
+        main: "#f44336"
+    },
   },
 });
 
@@ -42,7 +42,7 @@ const palette: {
 
 fetch("/static/data.json").then((response) => {
   response.json().then((data) => {
-    
+
   const Website = (
     <MuiThemeProvider theme={theme}>
       <Root data={data}/>

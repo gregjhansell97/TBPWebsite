@@ -7,11 +7,11 @@ import Tab from "@material-ui/core/Tab";
 import Tabs from "@material-ui/core/Tabs";
 
 
-//inhouse imports
+//inhouse
 import Events from "./Events.jsx";
 import About from "./About.jsx";
-//import Members from "./Members.jsx";
-//import Officers from "./Officers.jsx";
+import Members from "./Members.jsx";
+import Officers from "./Officers.jsx";
 import hardcodedTestData from  "../data.json";
 
 class Root extends React.Component {
@@ -20,8 +20,23 @@ class Root extends React.Component {
     super(props); //thanks bro!
     this.state = {
       index: 0,
-      count: 0
+      count: 0,
+      width: 0,
+      height: 0
     }
+  }
+
+  componentDidMount() {
+    this.updateSize();
+    window.addEventListener("resize", this.updateSize);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateSize);
+  }
+ 
+  updateSize = () => {
+    this.setState({width: window.innerWidth, height: window.innerHeight });
   }
 
   onClick = () => {
@@ -30,15 +45,15 @@ class Root extends React.Component {
   }
 
   render() {
-    let {count, index} = this.state;
+    let {count, height, index, width} = this.state;
     let {data} = this.props;
     let pages = [
       {name: "Events", component: Events},
-      {name: "Members", component: About},
-      {name: "Officers", component: About},
+      {name: "Members", component: Members},
+      {name: "Officers", component: Officers},
       {name: "About", component: About}
     ];
-    
+
     const P = pages[index].component;
 
     return (
@@ -50,8 +65,8 @@ class Root extends React.Component {
             )}
           </Tabs>
         </AppBar>
-       
-        {<P data={data}/>}
+
+        {<P data={data} width={width} height={height} count={count} onClick={this.onClick}/>}
       </div>
     );
   }

@@ -1,25 +1,24 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import {
-  Table,
-  TableBody,
-  TableHeader,
-  TableHeaderColumn,
-  TableRow,
-  TableRowColumn,
-} from "material-ui/Table";
-import {Tabs, Tab} from "material-ui/Tabs";
+//material-ui
+import Tab from "@material-ui/core/Tab";
+import Table from "@material-ui/core/Table";
+import TableBody from "@material-ui/core/TableBody";
+import TableCell from "@material-ui/core/TableCell";
+import TableHead from "@material-ui/core/TableHead";
+import TableRow from "@material-ui/core/TableRow";
+import Tabs from "@material-ui/core/Tabs";
 
 class CurrentMembers extends React.Component {
   render() {
       const {members} = this.props;
       return(
         <Table>
-          <TableBody displayRowCheckbox={false}>
+          <TableBody>
             {members.map((name, i) =>
-              <TableRow key={i} selectable={false} >
-                <TableRowColumn>{name}</TableRowColumn>
+              <TableRow key={i} >
+                <TableCell>{name}</TableCell>
               </TableRow>
             )}
           </TableBody>
@@ -33,10 +32,10 @@ class Candidates extends React.Component {
       const {candidates} = this.props;
       return(
         <Table>
-          <TableBody displayRowCheckbox={false}>
+          <TableBody>
             {candidates.map((name, i) =>
-              <TableRow key={i} selectable={false} >
-                <TableRowColumn>{name}</TableRowColumn>
+              <TableRow key={i}>
+                <TableCell>{name}</TableCell>
               </TableRow>
             )}
           </TableBody>
@@ -46,19 +45,24 @@ class Candidates extends React.Component {
 }
 
 class Members extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      index: 0
+    }
+  }
   render() {
+    const {index} = this.state;
     const {members, candidates} = this.props.data
     return (
       <div>
         <img src="static/images/members.jpg" alt="" style={{width: "100%"}}/>
-        <Tabs tabItemContainerStyle={{backgroundColor:"#D32F2F"}} inkBarStyle={{backgroundColor:"#FFCDD2"}}>
-          <Tab label="Current Members">
-            <CurrentMembers members={members}/>
-          </Tab>
-          <Tab label="Prospective Candidates">
-            <Candidates candidates={candidates}/>
-          </Tab>
+        <Tabs value={index} onChange={(e, i) => this.setState({index: i})}>
+          <Tab key={0} label="Current Members"/>
+          <Tab key={1} label="Prospective Candidates"/>
         </Tabs>
+        {index === 0 ? <CurrentMembers members={members}/> : undefined}
+        {index === 1 ? <Candidates candidates={candidates}/> : undefined}
       </div>
     );
   }
