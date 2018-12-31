@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import PropTypes from "prop-types";
 
 //material-ui
 import Tab from "@material-ui/core/Tab";
@@ -11,6 +11,7 @@ import TableRow from "@material-ui/core/TableRow";
 import Tabs from "@material-ui/core/Tabs";
 
 class CurrentMembers extends React.Component {
+
   render() {
       const {members} = this.props;
       return(
@@ -25,9 +26,11 @@ class CurrentMembers extends React.Component {
         </Table>
       )
   }
+
 }
 
 class Candidates extends React.Component {
+
   render() {
       const {candidates} = this.props;
       return(
@@ -42,18 +45,21 @@ class Candidates extends React.Component {
         </Table>
       )
   }
+
 }
 
 class Members extends React.Component {
+
   constructor(props) {
     super(props);
     this.state = {
       index: 0
     }
   }
+
   render() {
     const {index} = this.state;
-    const {members, candidates} = this.props.data
+    const {members, candidates} = this.props;
     return (
       <div>
         <img src="static/images/members.jpg" alt="" style={{width: "100%"}}/>
@@ -66,6 +72,12 @@ class Members extends React.Component {
       </div>
     );
   }
+
+}
+
+Members.propTypes = {
+  candidates: PropTypes.arrayOf(PropTypes.string),
+  members: PropTypes.arrayOf(PropTypes.string)
 }
 
 export default Members;

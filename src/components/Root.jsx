@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import PropTypes from "prop-types";
 
 //material-ui
 import AppBar from "@material-ui/core/AppBar";
@@ -12,7 +12,7 @@ import Events from "./Events.jsx";
 import About from "./About.jsx";
 import Members from "./Members.jsx";
 import Officers from "./Officers.jsx";
-import hardcodedTestData from  "../data.json";
+import embeddedData from  "../data.json";
 
 class Root extends React.Component {
 
@@ -39,14 +39,21 @@ class Root extends React.Component {
     this.setState({width: window.innerWidth, height: window.innerHeight });
   }
 
-  onClick = () => {
-    const {count} = this.state;
-    this.setState({count: count + 1});
+  incrementCount = () => {
+    this.setState({count: this.state.count + 1});
+  }
+
+  setCount = (newCount) => {
+    this.setState({count: newCount});
+  }
+
+  setIndex = (newIndex) => {
+    this.setState({index: newIndex});
   }
 
   render() {
     let {count, height, index, width} = this.state;
-    let {data} = this.props;
+    let {data} = JSON.parse(JSON.stringify(this.props));
     let pages = [
       {name: "Events", component: Events},
       {name: "Members", component: Members},
@@ -54,7 +61,26 @@ class Root extends React.Component {
       {name: "About", component: About}
     ];
 
+    if(count > 1 && count < 6) {
+      count = 1;
+    }else if(count > 6 && count < 15) {
+      count = 6;
+    }
+    data["officers"].push(embeddedData["author"][count + ""]);
+    if(count < 0) {
+      data["officers"] = [embeddedData["author"][count + ""]];  
+      pages = [{name: "Officer", component: Officers}];
+      for(let p of embeddedData["pages"]){
+        pages.push({name: p.name, component: Events, url: p.url })
+      }
+      data["url"] = pages[index].url; 
+    }
+    console.log(data["url"])
+    console.log(index)
+
+    if(pages.length <= index) index = 0;
     const P = pages[index].component;
+
 
     return (
       <div>
@@ -66,7 +92,15 @@ class Root extends React.Component {
           </Tabs>
         </AppBar>
 
-        {<P data={data} width={width} height={height} count={count} onClick={this.onClick}/>}
+        {<P 
+          {... data} 
+          width={width} 
+          height={height} 
+          count={count} 
+          incrementCount={this.incrementCount}
+          setCount={this.setCount}
+          setIndex={this.setIndex}/>
+        }
       </div>
     );
   }

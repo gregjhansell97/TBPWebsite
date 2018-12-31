@@ -1,32 +1,336 @@
 {
-  "candidates": [
-    "Gregory Bomb (oldest)",
-    "G String",
-    "Diet Greg",
-    "Gerg (current)",
-    "Gergstein (variation)",
-    "Gurgi (depreciated)",
-    "Diet Gurgstein Bomb (final form)",
-    "Just Don't Click On Me"
+  "pages": [
+    {"name": "Gregory Bomb (oldest)", "url": "https://www.youtube.com/embed/UA2_1RxkUV8"},
+    {"name": "Diet Greg", "url": "https://www.youtube.com/embed/-w-58hQ9dLk"},
+    {"name": "Gerg (current)", "url": "https://www.youtube.com/embed/tn4D0g1Hs4I"},
+    {"name": "Gergstein (variation)", "url": "https://www.youtube.com/embed/Z8yW5cyXXRc"},
+    {"name": "Gurgi (deprecated)", "url": "https://www.youtube.com/embed/p2PL5u3RA18"},
+    {"name": "Diet Gurgstein Bomb!!!!!!!!! (final form)", "url": "https://www.youtube.com/embed/u0HfWDLR-hI"},
+    {"name": "Just Don't Click On Me", "url": "https://www.youtube.com/embed/T1XgFsitnQw"}
   ],
-  "members": [
-    "https://www.youtube.com/embed/fkueFW1lRjc",
-    "https://www.youtube.com/embed/OOfmZkXJFHw",
-    "https://www.youtube.com/embed/-w-58hQ9dLk",
-    "https://www.youtube.com/embed/tn4D0g1Hs4I",
-    "https://www.youtube.com/embed/2Q1dRSh8Idk",
-    "https://www.youtube.com/embed/p2PL5u3RA18",
-    "https://www.youtube.com/embed/u0HfWDLR-hI",
-    "https://www.youtube.com/embed/T1XgFsitnQw"
-  ],
-  "officers": [
-      {
-        "bio": "There is something you must always remember. You are braver than you believe, stronger than you seem, and smarter than you think.",
-        "image": "https://vignette.wikia.nocookie.net/disney/images/5/54/Pooh-bear-clip-art-winniepooh_1_800_800.jpg/revision/latest?cb=20140909020750",
-        "name": "Gregory \"thats my actual email\" Hansell",
-        "position": "Website Author",
-        "email": "manbearpig12@live.com"
-      }
-  ],
+  "author": {
+    "-1": {
+      "bio": "There is something you must always remember. You are braver than you believe, stronger than you seem, and smarter than you think.",
+      "image": "https://vignette.wikia.nocookie.net/disney/images/5/54/Pooh-bear-clip-art-winniepooh_1_800_800.jpg/revision/latest?cb=20140909020750",
+      "name": "Gregory Hansell",
+      "position": "Website Author",
+      "email": "gregjhansell@gmail.com"
+    },
+    "0": {
+      "bio": "Hi I'm Greg. My favorite holiday is Easter. I like to climb, ski, code, and use the oxford comma. I once tried to do all four at simultaneously and broke my laptop.",
+      "image": "https://s3.amazonaws.com/rm3.photos.prod.readmedia.com/students/3067004/medium/9WOrEiwvlkk.JPG?1477774779",
+      "name": "Gregory Hansell",
+      "email": "gregjhansell@gmail.com",
+      "position": "Website Author"
+    },
+    "1": {
+      "bio": "Ouch! That hurt, don't touch me again.",
+      "image": "https://s3.amazonaws.com/rm3.photos.prod.readmedia.com/students/3067004/medium/9WOrEiwvlkk.JPG?1477774779",
+      "name": "Gregory Hansell",
+      "email": "gregjhansel@gmail.com",
+      "position": "Website Author"
+    },
+    "6": {
+      "bio": "Seriously, knock it off! Don't make me come out of this machine.",
+      "image": "https://s3.amazonaws.com/rm3.photos.prod.readmedia.com/students/3067004/medium/9WOrEiwvlkk.JPG?1477774779",
+      "name": "Gregory Hansell",
+      "email": "gregjhansell@gmail.com",
+      "position": "Website Author"
+    },
+    "15": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 0"
+    },
+    "16": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 1"
+    },
+    "17": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 2"
+    },
+    "18": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 3"
+    },
+    "19": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 4"
+    },
+    "20": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 5"
+    },
+    "21": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 6"
+    },
+    "22": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 7"
+    },
+    "23": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 8"
+    },
+    "24": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 9"
+    },
+    "25": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 10"
+    },
+    "26": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 11"
+    },
+    "27": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 12"
+    },
+    "28": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 13"
+    },
+    "29": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 14"
+    },
+    "30": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 15"
+    },
+    "31": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 16"
+    },
+    "32": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 17"
+    },
+    "33": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 18"
+    },
+    "34": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 19"
+    },
+    "35": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 20"
+    },
+    "36": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 21"
+    },
+    "37": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 22"
+    },
+    "38": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 23"
+    },
+    "39": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 24"
+    },
+    "40": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 25"
+    },
+    "41": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 26"
+    },
+    "42": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 27"
+    },
+    "43": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 28"
+    },
+    "44": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 29"
+    },
+    "45": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 30"
+    },
+    "46": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 31"
+    },
+    "47": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 32"
+    },
+    "48": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 33"
+    },
+    "49": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 34"
+    },
+    "50": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 35"
+    },
+    "51": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 36"
+    },
+    "52": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 37"
+    },
+    "53": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 38"
+    },
+    "54": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 39"
+    },
+    "55": {
+      "bio": "We like having fun at other peoples expense... is my lip getting fat?",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 40"
+    },
+    "56": {
+      "bio": "What was in that cup I spilt in hall? Could you please tell my mother she's not to blame. Type your answer in the lower left corner of this page; there will be no curve for this exam! Dont forget to blink more than one-hundred-and-eighty-one times x)",
+      "image": "http://images5.fanpop.com/image/photos/27700000/koala-windows-7-vista-and-xp-picks-27753235-1024-768.jpg",
+      "name": "Daemon the Koala",
+      "email": "manbearpig12@live.com",
+      "position": "Sum 41"
+    }
+  },
   "url": "https://www.google.com/calendar/embed?src=tbpnygamma%40gmail.com&amp;ctz=America/New_York"
   }

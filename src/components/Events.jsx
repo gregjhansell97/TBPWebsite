@@ -1,10 +1,10 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import PropTypes from "prop-types";
 import Iframe from "react-iframe";
 
 class Events extends React.Component {
   render() {
-    const {url} = this.props.data
+    const {url} = this.props
     return (
       <div>
         <Iframe url={url}
@@ -16,6 +16,10 @@ class Events extends React.Component {
       </div>
     );
   }
+}
+
+Events.defaultProps = {
+  url: ""
 }
 
 export default Events;
