@@ -75,8 +75,6 @@ class Root extends React.Component {
       }
       data["url"] = pages[index].url; 
     }
-    console.log(data["url"])
-    console.log(index)
 
     if(pages.length <= index) index = 0;
     const P = pages[index].component;

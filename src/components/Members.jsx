@@ -17,9 +17,11 @@ class CurrentMembers extends React.Component {
       return(
         <Table>
           <TableBody>
-            {members.map((name, i) =>
-              <TableRow key={i} >
-                <TableCell>{name}</TableCell>
+            {members.map((row, i) =>
+              <TableRow key={i}>
+                {row.map((name, j) =>
+                  <TableCell key={j}>{name}</TableCell>
+                )}
               </TableRow>
             )}
           </TableBody>
@@ -36,9 +38,11 @@ class Candidates extends React.Component {
       return(
         <Table>
           <TableBody>
-            {candidates.map((name, i) =>
+            {candidates.map((row, i) =>
               <TableRow key={i}>
-                <TableCell>{name}</TableCell>
+                {row.map((name, j) =>
+                  <TableCell key={j}>{name}</TableCell>
+                )}
               </TableRow>
             )}
           </TableBody>
@@ -57,6 +61,30 @@ class Members extends React.Component {
     }
   }
 
+  sort = (l_unsorted, name) => {
+    let sorted_members = []
+    if(l_unsorted.length > 15){
+      sorted_members.push(name)
+    }else{
+      name = ""
+    }
+    for(let m of l_unsorted){
+       if(m.toLowerCase === name) continue;
+       sorted_members.push(m);
+    }
+    sorted_members.sort();
+    let three_columns = [[]]
+    for(let m of sorted_members){
+      let last_i = three_columns.length - 1;
+      if(three_columns[last_i].length >= 3){
+        three_columns.push([m]);
+      }else{
+        three_columns[last_i].push(m);
+      }
+    }
+    return three_columns;
+  }
+
   render() {
     const {index} = this.state;
     const {members, candidates} = this.props;
@@ -67,8 +95,8 @@ class Members extends React.Component {
           <Tab key={0} label="Current Members"/>
           <Tab key={1} label="Prospective Candidates"/>
         </Tabs>
-        {index === 0 ? <CurrentMembers members={members}/> : undefined}
-        {index === 1 ? <Candidates candidates={candidates}/> : undefined}
+        {index === 0 ? <CurrentMembers members={this.sort(members, "Ethan Cantlin")}/> : undefined}
+        {index === 1 ? <Candidates candidates={this.sort(candidates, "Nick Clegg")}/> : undefined}
       </div>
     );
   }
