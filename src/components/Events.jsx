@@ -2,6 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import Iframe from "react-iframe";
 
+/**
+ * Iframe wrapper to display a given url
+ */
 class Events extends React.Component {
   render() {
     const {url} = this.props
@@ -17,7 +20,10 @@ class Events extends React.Component {
     );
   }
 }
-
+Events.propTypes = {
+  ///the url that is being rendered
+  url: PropTypes.string
+}
 Events.defaultProps = {
   url: ""
 }
