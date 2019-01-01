@@ -17,9 +17,9 @@ const theme = createMuiTheme({
   },
 });
 
+///grabs the static data needed to render the the page
 fetch("/static/data.json").then((response) => {
   response.json().then((data) => {
-
   const Website = (
     <MuiThemeProvider theme={theme}>
       <Root data={data}/>
