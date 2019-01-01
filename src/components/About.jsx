@@ -22,6 +22,7 @@ class About extends React.Component {
 }
 
 About.propTypes = {
+  ///list of strings that get rendered into html
   about: PropTypes.arrayOf(PropTypes.string)
 }
 
