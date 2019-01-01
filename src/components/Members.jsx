@@ -3,86 +3,61 @@ import PropTypes from "prop-types";
 
 //material-ui
 import Tab from "@material-ui/core/Tab";
-import Table from "@material-ui/core/Table";
-import TableBody from "@material-ui/core/TableBody";
-import TableCell from "@material-ui/core/TableCell";
-import TableHead from "@material-ui/core/TableHead";
-import TableRow from "@material-ui/core/TableRow";
 import Tabs from "@material-ui/core/Tabs";
 
-class CurrentMembers extends React.Component {
+//inhouse
+import CustomTable from "./helpers/CustomTable.jsx";
 
-  render() {
-      const {members} = this.props;
-      return(
-        <Table>
-          <TableBody>
-            {members.map((row, i) =>
-              <TableRow key={i}>
-                {row.map((name, j) =>
-                  <TableCell key={j}>{name}</TableCell>
-                )}
-              </TableRow>
-            )}
-          </TableBody>
-        </Table>
-      )
-  }
-
-}
-
-class Candidates extends React.Component {
-
-  render() {
-      const {candidates} = this.props;
-      return(
-        <Table>
-          <TableBody>
-            {candidates.map((row, i) =>
-              <TableRow key={i}>
-                {row.map((name, j) =>
-                  <TableCell key={j}>{name}</TableCell>
-                )}
-              </TableRow>
-            )}
-          </TableBody>
-        </Table>
-      )
-  }
-
-}
-
+/**
+ * the members of the society displayed in two tables; one for candidates and
+ * one for current members
+ */
 class Members extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      index: 0
+      index: 0 //index to select candidates or members
     }
   }
 
-  sort = (l_unsorted, name) => {
-    let sorted_members = []
+  /**
+   * makes a grid with columns specified in the members property; inserts an
+   * easter egg member if length is greater than 15
+   *
+   * @param l_unsorted ([str]): unsorted list of names to be made into a grid
+   * @param name (str): the name of easter egg inserted when length is larger
+   * than twenty
+   *
+   * @return [[str]]: a sorted grid that copies data from l_unsorted
+   */
+  makeGrid = (l_unsorted, name) => {
+    //handles the easter egg
+    let sorted_members = [];
     if(l_unsorted.length > 15){
-      sorted_members.push(name)
+      sorted_members.push(name);
     }else{
-      name = ""
+      name = "";
     }
+
+    //copy of sorted members
     for(let m of l_unsorted){
-       if(m.toLowerCase === name) continue;
+       if(m.toLowerCase() === name) continue; //easter egg
        sorted_members.push(m);
     }
     sorted_members.sort();
-    let three_columns = [[]]
+
+    //makes a grid out of the sorted list
+    let grid = [[]];
     for(let m of sorted_members){
-      let last_i = three_columns.length - 1;
-      if(three_columns[last_i].length >= 3){
-        three_columns.push([m]);
+      let last_i = grid.length - 1;
+      if(grid[last_i].length >= this.props.columns){
+        grid.push([m]);
       }else{
-        three_columns[last_i].push(m);
+        grid[last_i].push(m);
       }
     }
-    return three_columns;
+    return grid;
   }
 
   render() {
@@ -95,8 +70,12 @@ class Members extends React.Component {
           <Tab key={0} label="Current Members"/>
           <Tab key={1} label="Prospective Candidates"/>
         </Tabs>
-        {index === 0 ? <CurrentMembers members={this.sort(members, "Ethan Cantlin")}/> : undefined}
-        {index === 1 ? <Candidates candidates={this.sort(candidates, "Nick Clegg")}/> : undefined}
+        {index === 0 &&
+          <CustomTable grid={this.makeGrid(members, "Ethan Cantlin")}/>
+        }
+        {index === 1 &&
+          <CustomTable grid={this.makeGrid(candidates, "Nick Clegg")}/>
+        }
       </div>
     );
   }
@@ -104,8 +83,15 @@ class Members extends React.Component {
 }
 
 Members.propTypes = {
+  ///prospective candidates of the society
   candidates: PropTypes.arrayOf(PropTypes.string),
+  ///current members of the society
   members: PropTypes.arrayOf(PropTypes.string)
+}
+
+Members.defaultProps = {
+  ///number of columns presented for candidates and members
+  columns: 3
 }
 
 export default Members;
