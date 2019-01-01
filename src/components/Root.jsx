@@ -1,96 +1,141 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import PropTypes from "prop-types";
 
 //material-ui
-import AppBar from 'material-ui/AppBar';
-import Drawer from 'material-ui/Drawer';
-import MenuItem from 'material-ui/MenuItem';
+import AppBar from "@material-ui/core/AppBar";
+import Tab from "@material-ui/core/Tab";
+import Tabs from "@material-ui/core/Tabs";
 
-//inhouse imports
+
+//inhouse
 import Events from "./Events.jsx";
 import About from "./About.jsx";
 import Members from "./Members.jsx";
 import Officers from "./Officers.jsx";
-import hardcodedTestData from  "../data.json";
-
-//Page Enums:
-const EVENTS = "Events";
-const ABOUT = "About";
-const MEMBERS = "Members";
-const OFFICERS = "Officers";
+import embeddedData from  "../data.json";
 
 class Root extends React.Component {
+
   constructor(props) {
-    super(props);
+    super(props); //thanks bro!
     this.state = {
-      page: EVENTS,
-      index: 0,
-      count: 0,
-      drawerOpen: false
-    };
+      tab: 0, //current tab
+      count: 0, //how many times website authors image has been clicked
+      width: 0, //width of the screen
+      height: 0 //height of the screen
+    }
   }
 
-  onTitleClick = () => {
-    const {count} = this.state;
-    this.setState({count: count + 1})
-    console.log("Blink-" + (count + 1));
+  componentDidMount() {
+    this.updateSize();
+    //subscries to resize
+    window.addEventListener("resize", this.updateSize);
+  }
+
+  componentWillUnmount() {
+    //unsubscribes to resize upon unmounting
+    window.removeEventListener("resize", this.updateSize);
+  }
+
+  /**
+   * sets the states width and height when a resize occurs
+   */
+  updateSize = () => {
+    this.setState({width: window.innerWidth, height: window.innerHeight });
+  }
+
+  /**
+   * increments the count by one
+   */
+  incrementCount = () => {
+    this.setState({count: this.state.count + 1});
+  }
+
+  /**
+   * sets the count, do not use to increment
+   *
+   * @param newCount(int): the new count that modifies the count state
+   */
+  setCount = (newCount) => {
+    this.setState({count: newCount});
+  }
+
+  /**
+   * sets the current tab
+   *
+   * @param newTab(int): the new tab that modifies the tab state
+   */
+  setTab = (newTab) => {
+    this.setState({tab: newTab});
   }
 
   render() {
-    let {page, drawerOpen, count, index} = this.state;
-    let {data} = this.props;
-    let pages = {
-      "Events" : Events,
-      "Members" : Members,
-      "Officers" : Officers,
-      "About" : About
-    };
-    if(count === 0xB6){
-      data = hardcodedTestData;
-      const testMenu = data.candidates;
-      data.url = data.members[index - 1]
-      if(page === EVENTS || page === ABOUT || page === MEMBERS){
-        page = OFFICERS
-      }
-      pages = {
-        "Officers" : Officers,
-      };
-      for(let i = 0; i < testMenu.length; i++){
-        pages[testMenu[i]] = Events;
-      }
+    let {count, height, tab, width} = this.state;
+
+    //makes a copy of data so items can be modified without reference problems
+    let {data} = JSON.parse(JSON.stringify(this.props));
+
+    //pages to be rendered
+    let pages = [
+      {name: "Events", component: Events},
+      {name: "Members", component: Members},
+      {name: "Officers", component: Officers},
+      {name: "About", component: About}
+    ];
+
+    //easter egg logic
+    if(count > 1 && count < 6) {
+      count = 1;
+    }else if(count > 6 && count < 15) {
+      count = 6;
     }
-    const P = pages[page];
+    //embedds author as an officer
+
+    data["officers"].push(embeddedData["author"][count + ""]);
+
+    //solved the riddle!
+    if(count < 0) {
+      data["officers"] = [embeddedData["author"][count + ""]];
+      pages = [{name: "Officer", component: Officers}];
+      for(let p of embeddedData["pages"]){
+        pages.push({name: p.name, component: Events, url: p.url })
+      }
+      data["url"] = pages[tab].url;
+    }
+
+    if(pages.length <= tab) tab = 0;
+    const P = pages[tab].component;
+
     return (
       <div>
+        <AppBar position="static">
+          <Tabs value={tab} onChange={(e, i) => this.setState({tab: i})}>
+            {pages.map((pg, i) =>
+              <Tab key={i} label={pg.name}/>
+            )}
+          </Tabs>
+        </AppBar>
 
-        <AppBar
-          title={page}
-          onTitleClick={()=>this.onTitleClick()}
-          onLeftIconButtonClick={() => this.setState({drawerOpen: !drawerOpen})}
-          style={{backgroundColor:"#D32F2F"}} />
-
-        <Drawer
-          open={drawerOpen}
-          docked={false}
-          onRequestChange={(open) => this.setState({drawerOpen: open})}>
-
-          {Object.keys(pages).map((pg, i) =>
-            <MenuItem key={i} onClick={ () => {
-              this.setState({
-                page: pg,
-                index: i,
-                drawerOpen: false
-              })
-            }}> {pg} </MenuItem>
-          )}
-
-        </Drawer>
-
-        {<P data={data}/>}
-
+        {<P
+          {... data}
+          width={width}
+          height={height}
+          count={count}
+          incrementCount={this.incrementCount}
+          setCount={this.setCount}
+          setTab={this.setTab}/>
+        }
       </div>
     );
   }
+}
+
+Root.propTypes = {
+  /**
+   * the static data injected in that includes information needed for all the
+   * components
+   */
+  data: PropTypes.object
 }
 
 export default Root;
