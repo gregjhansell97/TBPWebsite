@@ -8,32 +8,32 @@ import TableCell from "@material-ui/core/TableCell";
 import TableRow from "@material-ui/core/TableRow";
 import Tabs from "@material-ui/core/Tabs";
 
-class CurrentMembers extends React.Component {
+/**
+ * 2-D table of members currently apart of Tau Beta Pi
+ */
+class MemberTable extends React.Component {
   render() {
-    const {members} = this.props;
-    return (
-      <Table>
-        <TableBody>
-          {members.map((name, i) =>
-            <TableRow key={i}>
-              <TableCell> {name} </TableCell>
-            </TableRow>
-          )}
-        </TableBody>
-      </Table>
-    );
-  }
-}
+    const {members, columns} = this.props;
 
-class Candidates extends React.Component {
-  render() {
-    const {candidates} = this.props;
+    // converts members list into 2-D array
+    let members_table = [];
+    for(let i = 0; i < members.length; ++i) {
+        if(i%columns == 0) {
+            members_table.push([]);
+        }
+        members_table[members_table.length - 1].push(members[i]);
+    }
+
     return (
       <Table>
         <TableBody>
-          {candidates.map((name, i) => 
+          {members_table.map((row, i) =>
             <TableRow key={i}>
-              <TableCell> {name} </TableCell>
+              {row.map((name, j) =>
+                <TableCell key={i*members_table.length + j}> 
+                  {name} 
+                </TableCell>
+              )}
             </TableRow>
           )}
         </TableBody>
@@ -68,8 +68,8 @@ class Members extends React.Component {
           <Tab label="Current Members" />
           <Tab label="Prospective Candidates" />
         </Tabs>
-        {tab === CURRENT && <CurrentMembers members={members} />}
-        {tab === PROSPECTIVE && <Candidates candidates={candidates} />}
+        {tab === CURRENT && <MemberTable columns={3} members={members} />}
+        {tab === PROSPECTIVE && <MemberTable columns={3} members={candidates} />}
       </div>
     )
   }
