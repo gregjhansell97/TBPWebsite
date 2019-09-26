@@ -10,7 +10,7 @@ import Tabs from "@material-ui/core/Tabs";
 import Events from "./Events.js";
 import About from "./About.js";
 import Members from "./Members.js";
-import Officers from "./Officers.jsx";
+import Officers from "./Officers.js";
 
 class Root extends React.Component {
 
@@ -90,6 +90,26 @@ class Root extends React.Component {
     // prevents index out of bounds access to tabs
     if(pages.length <= tab) tab = 0;
     const P = pages[tab].component;
+
+    for(let o of data["officers"]) {
+        const webmaster = (/Webmaster/.test(o["position"]))
+        if(count > 0 && webmaster) {
+            o["bio"] = "Ouch! That hurt man!";
+        } 
+        if(count > 5 && webmaster) {
+            o["bio"] = "Seriously, knock it off... don't make me come out of this machine";
+        }
+        if(count > 9 && !webmaster) {
+            o["position"] = "Hostage";
+        }
+        if(count > 9 && webmaster) {
+            o["bio"] = "Look at me, I am the captain now";
+        }
+        if(count > 14 && webmaster) {
+            o["position"] = "The Captain"
+            o["bio"] = "What was in that cup I spilt in hall? Could you please tell my mother she's not to blame. Type your answer in the lower left corner of this page; there will be no curve for this exam! Dont forget to blink more than one-hundred-and-eighty-one times x)"
+        } 
+    }
 
     return (
       <div>
