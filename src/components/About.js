@@ -8,7 +8,8 @@ class About extends Component {
         return (
             <div>
                 <TBPNavbar />
-                <h1> ABOUT </h1>
+                <div dangerouslySetInnerHTML={
+                    {__html: this.props.html}} />
             </div>
         );
     }

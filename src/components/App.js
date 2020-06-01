@@ -18,6 +18,7 @@ import Officers from "./Officers";
 
 class App extends Component {
     render() {
+        // retrieve about html??
         return (
             <Router>
                 <Switch>
@@ -31,7 +32,8 @@ class App extends Component {
                         <Officers />
                     </Route>
                     <Route path="/">
-                        <About />
+                        <About 
+                            html= "<p1>summary of everything...</p1>"/>
                     </Route>
                 </Switch>
             </Router>
